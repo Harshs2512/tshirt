@@ -1,0 +1,48 @@
+.img-view {
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* transform: translateX(100%); */
+  background-size: 1440px 2080px;
+  background-color: white;
+  /* background-position: -643.462px -481.256px; */
+}
+
+.cursor-view {
+  position: absolute;
+  top: 11rem;
+  left: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  z-index: 10;
+
+}
+
+.image-magnify-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-magnify-small-image {
+  display: block;
+  max-width: 100%;
+}
+
+.image-magnify-large-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(10px);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-magnify-container:hover .image-magnify-large-image {
+  display: block;
+} 
