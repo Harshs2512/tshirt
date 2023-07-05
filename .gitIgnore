@@ -10,7 +10,6 @@
 /frontend/coverage
 
 /frontend/# production
-/frontend/build
 
 /frontend/# misc
 /frontend/.DS_Store
