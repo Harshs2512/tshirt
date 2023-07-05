@@ -35,11 +35,14 @@ app.use("/api/v1/payment", paymentRoute);
 app.use("/api/v1", orderRoute);
 
 app.get("/api/v1/getkey", (req, res) => {
-    res.status(200).json({key: process.env.RAZORPAY_API_KEY})
+    res.status(200).json({ key: process.env.RAZORPAY_API_KEY })
 })
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+});
 
-app.use('*', function(req,res) {
+app.use('*', function (req, res) {
     res.sendFile(path.join(__dirname, '../frontend/build'))
 })
 // Middleware for Error
