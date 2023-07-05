@@ -7,9 +7,7 @@
         }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "use": "index.js"
-        }
-    ]
+        { "src": "/api/(.*)", "dest": "/serverless/api/$1" },
+        { "src": "/(.*)", "dest": "/$1" }
+      ]
 }
